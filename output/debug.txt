@@ -110,3 +110,40 @@ Trip Suggestion: - Start at Praia Fluvial de São Paio Merelim in Braga
 List of Places: {'start': 'Praia Fluvial de São Paio Merelim, São Paio de Merelim, Braga', 'end': 'Praia de Benagil, 8400-525 Lagoa, Algarve', 'waypoints': ['Praia da Marinha, Caramujeira, 8400-502 Lagoa, Algarve', 'Praia do Camilo, 8600-544 Lagos, Algarve', 'Praia da Falésia, 8200-916 Albufeira, Algarve'], 'transit': 'driving'}
 --------------------------------------------------
 Validation Result: {'query': 'I want to do a 5 day roadtrip from Braga to Algarve in Portugal.\nI want to visit remote locations with beaches', 'format_instructions': 'The output should be formatted as a JSON instance that conforms to the JSON schema below.\n\nAs an example, for the schema {"properties": {"foo": {"title": "Foo", "description": "a list of strings", "type": "array", "items": {"type": "string"}}}, "required": ["foo"]}\nthe object {"foo": ["bar", "baz"]} is a well-formatted instance of the schema. The object {"properties": {"foo": ["bar", "baz"]}} is not well-formatted.\n\nHere is the output schema:\n```\n{"properties": {"plan_is_valid": {"description": "This field is \'1\' if the plan is feasible, \'0\' otherwise", "title": "Plan Is Valid", "type": "string"}, "updated_request": {"description": "Your update to the plan", "title": "Updated Request", "type": "string"}}, "required": ["plan_is_valid", "updated_request"]}\n```', 'validation_output': Validation(plan_is_valid='1', updated_request='')}
+
+
+
+--------------------------------------------------
+Message: #1
+--------------------------------------------------
+User Query: I want to do a 3 day roadtrip starting in Porto and finishing in Braga, Portugal.
+In the first day I want to visit beaches and touristic sites.
+In the second day I want to go to a zoo in the afternoon, and a casino in the evening.
+In the third day I want to spend my day in the hotel.
+Build me an itinerary.
+--------------------------------------------------
+Trip Suggestion: 
+- Day 1:
+  - Start your road trip in Porto.
+  - Visit Praia da Foz:
+    - Address: Praia da Foz, Porto, Portugal
+    - Enjoy the beach and the beautiful view over the ocean.
+  - Explore touristic sites in Porto.
+  - Stay overnight in Porto.
+
+- Day 2:
+  - Drive to Zoo Santo Inácio:
+    - Address: Rua 5 de Outubro, 4503 4430-809 Vila Nova de Gaia - Porto, Portugal
+    - Spend the afternoon at the zoo and explore the natural habitats.
+  - In the evening, head to Casino da Póvoa:
+    - Address: Edifício do Casino da Póvoa de Varzim 4490-403 Póvoa de Varzim, Portugal
+    - Enjoy the games and entertainment at the casino.
+  - Stay overnight in Póvoa de Varzim.
+
+- Day 3:
+  - Relax and enjoy your day at the hotel in Póvoa de Varzim.
+  - End your road trip in Braga.
+--------------------------------------------------
+List of Places: {'start': 'Porto', 'end': 'Braga', 'waypoints': ['Praia da Foz, Porto, Portugal', 'Rua 5 de Outubro, 4503 4430-809 Vila Nova de Gaia - Porto, Portugal', 'Edifício do Casino da Póvoa de Varzim 4490-403 Póvoa de Varzim, Portugal'], 'transit': 'driving'}
+--------------------------------------------------
+Validation Result: {'query': 'I want to do a 3 day roadtrip starting in Porto and finishing in Braga, Portugal.\nIn the first day I want to visit beaches and touristic sites.\nIn the second day I want to go to a zoo in the afternoon, and a casino in the evening.\nIn the third day I want to spend my day in the hotel.\nBuild me an itinerary.', 'format_instructions': 'The output should be formatted as a JSON instance that conforms to the JSON schema below.\n\nAs an example, for the schema {"properties": {"foo": {"title": "Foo", "description": "a list of strings", "type": "array", "items": {"type": "string"}}}, "required": ["foo"]}\nthe object {"foo": ["bar", "baz"]} is a well-formatted instance of the schema. The object {"properties": {"foo": ["bar", "baz"]}} is not well-formatted.\n\nHere is the output schema:\n```\n{"properties": {"plan_is_valid": {"title": "Plan Is Valid", "description": "This field is \'1\' if the plan is feasible, \'0\' otherwise", "type": "string"}, "updated_request": {"title": "Updated Request", "description": "Your update to the plan", "type": "string"}}, "required": ["plan_is_valid", "updated_request"]}\n```', 'validation_output': Validation(plan_is_valid='1', updated_request='')}
