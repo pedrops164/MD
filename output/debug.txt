@@ -1,0 +1,27 @@
+User Query: I want to do a 3 day roadtrip starting in Porto and finishing in Braga, Portugal.
+In the first day I want to visit beaches and touristic sites.
+In the second day I want to go to a zoo in the afternoon, and a casino in the evening.
+In the third day I want to spend my day in the hotel.
+Build me an itinerary.
+Trip Suggestion: - Day 1:
+  - Start your road trip in Porto.
+  - Drive to Praia fluvial da Ponte do Bico in Palmeira, Braga.
+    - Address: Outeiro - Palmeira, Braga
+    - Enjoy the sandy beach and grassy area, and take part in activities like football and volleyball.
+  - Visit Casa da Ponte do Porto for a relaxing evening.
+    - Address: Av. Ponte do Porto, 47, Pousada, 4710-730 Braga
+    - Enjoy the country house amenities and spend the night there.
+
+- Day 2:
+  - Head to the zoo in the afternoon.
+  - Visit the casino in the evening.
+    - Address: R. Capitão Gaspar de Castro, 4050-279 Porto
+    - Enjoy the games and entertainment at the casino.
+
+- Day 3:
+  - Spend the day relaxing at Casa da Ponte do Porto.
+    - Address: Av. Ponte do Porto, 47, Pousada, 4710-730 Braga
+    - Enjoy the amenities and peaceful surroundings before heading back home.
+List of Places: {'start': 'Porto', 'end': 'Porto', 'waypoints': ['Praia fluvial da Ponte do Bico, Outeiro - Palmeira, Braga', 'Casa da Ponte do Porto, Av. Ponte do Porto, 47, Pousada, 4710-730 Braga', 'Zoo (specific address unknown)', 'Casino, R. Capitão Gaspar de Castro, 4050-279 Porto'], 'transit': 'driving'}
+Validation Result: {'query': 'I want to do a 3 day roadtrip starting in Porto and finishing in Braga, Portugal.\nIn the first day I want to visit beaches and touristic sites.\nIn the second day I want to go to a zoo in the afternoon, and a casino in the evening.\nIn the third day I want to spend my day in the hotel.\nBuild me an itinerary.', 'format_instructions': 'The output should be formatted as a JSON instance that conforms to the JSON schema below.\n\nAs an example, for the schema {"properties": {"foo": {"title": "Foo", "description": "a list of strings", "type": "array", "items": {"type": "string"}}}, "required": ["foo"]}\nthe object {"foo": ["bar", "baz"]} is a well-formatted instance of the schema. The object {"properties": {"foo": ["bar", "baz"]}} is not well-formatted.\n\nHere is the output schema:\n```\n{"properties": {"plan_is_valid": {"description": "This field is \'1\' if the plan is feasible, \'0\' otherwise", "title": "Plan Is Valid", "type": "string"}, "updated_request": {"description": "Your update to the plan", "title": "Updated Request", "type": "string"}}, "required": ["plan_is_valid", "updated_request"]}\n```', 'validation_output': Validation(plan_is_valid='1', updated_request='')}
+--------------------------------------------------

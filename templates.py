@@ -17,7 +17,7 @@ class Trip(BaseModel):
 
 class Validation(BaseModel):
     plan_is_valid: str = Field(
-        description="This field is 'yes' if the plan is feasible, 'no' otherwise"
+        description="This field is '1' if the plan is feasible, '0' otherwise"
     )
     updated_request: str = Field(description="Your update to the plan")
 

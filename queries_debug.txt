@@ -1,0 +1,41 @@
+
+query1: str = """
+        I want to do a 5 day roadtrip from Cape Town to Pretoria in South Africa.
+        I want to visit remote locations with mountain views
+        """
+
+query2: str = """
+        I want to walk from Cape Town to Pretoria in South Africa.
+        I want to visit remote locations with mountain views
+        """
+
+query3: str = """
+        I want to do a 5 day roadtrip from Braga to Algarve in Portugal.
+        I want to visit remote locations with beaches
+        """
+
+query4: str = """
+        I want to do a 2 day roadtrip in Braga, Portugal.
+        I want to visit beaches and forests.
+        Build me an itinerary.
+        """
+
+query5: str = """
+        I want to do a 3 day roadtrip starting in Porto and finishing in Braga, Portugal.
+        In the first day I want to visit beaches and touristic sites.
+        In the second day I want to go to a zoo in the afternoon, and a casino in the evening.
+        In the third day I want to spend my day in the hotel.
+        Build me an itinerary.
+        """
+
+
+trip_suggestion, list_of_places, validation_result = travel_agent.build_itinerary(query5)
+print("-----------------------------------------------------------------\n\n\n\n")
+print("Query Exemplo:", query4)
+print("-----------------------------------------------------------------\n\n\n\n")
+print(trip_suggestion)
+print("-----------------------------------------------------------------\n\n\n\n")
+print(list_of_places)
+print("-----------------------------------------------------------------\n\n\n\n")
+print(validation_result)
+print("-----------------------------------------------------------------\n\n\n\n")

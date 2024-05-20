@@ -2,6 +2,32 @@ import os
 from langchain_community.vectorstores import Chroma
 from langchain_openai import OpenAIEmbeddings
 
+
+# ----------------------------------------------------------- 
+# odeio isto
+# esta cena é necessária para a get_vector_db!
+
+import os
+from dotenv import load_dotenv
+from pathlib import Path
+
+def load_secrets():
+    load_dotenv()
+    env_path = Path(".") / "./.env"
+    load_dotenv(dotenv_path=env_path)
+
+    openai_api_key = os.getenv("OPENAI_API_KEY")
+    google_palm_key = os.getenv("GOOGLE_PALM_API_KEY")
+
+    return {
+        "OPENAI_API_KEY": openai_api_key,
+        "GOOGLE_PALM_API_KEY": google_palm_key,
+    }
+secrets = load_secrets()
+openai_api_key=secrets["OPENAI_API_KEY"]
+
+# ----------------------------------------------------------- 
+
 # get absolute path to dbs folder
 dbs_path = os.path.dirname(os.path.abspath(__file__))
 
@@ -32,7 +58,7 @@ def get_persist_dir(db_name='default'):
 
 def get_vector_db(db_name='default'):
     persist_dir = get_persist_dir(db_name)
-    return Chroma(persist_directory=persist_dir, embedding_function=OpenAIEmbeddings(openai_api_key=OPENAI_API_KEY))
+    return Chroma(persist_directory=persist_dir, embedding_function=OpenAIEmbeddings(openai_api_key=openai_api_key))
 
 # creates a chroma database given chunks (array of documents)
 def create_vector_db_from_documents(chunks, entity_type='default'):

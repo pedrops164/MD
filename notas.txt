@@ -1,0 +1,2 @@
+É preciso isto para o chromadb instalar com o pip:
+https://visualstudio.microsoft.com/visual-cpp-build-tools/
