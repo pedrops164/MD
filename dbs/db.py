@@ -58,6 +58,8 @@ def get_persist_dir(db_name='default'):
 
 def get_vector_db(db_name='default'):
     persist_dir = get_persist_dir(db_name)
+    print("-------------------------------------------- ENTITY PASSADA À CHROMADB:")
+    print(db_name)
     return Chroma(persist_directory=persist_dir, embedding_function=OpenAIEmbeddings(openai_api_key=openai_api_key))
 
 # creates a chroma database given chunks (array of documents)
@@ -80,7 +82,7 @@ def add_chunks_to_db(documents, entity_type='default'):
 def get_top_n_chunks(query, topn=1, entity_type='default'):
     db = get_vector_db(entity_type)
     chunks = db.similarity_search(query)
-    print("----------------------------------------------------------- CHUNKS:")
-    print(chunks)
-    print("-----------------------------------------------------------")
+    #print("----------------------------------------------------------- CHUNKS:")
+    #print(chunks)
+    #print("-----------------------------------------------------------")
     return chunks[:topn]
