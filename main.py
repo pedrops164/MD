@@ -171,9 +171,8 @@ class Agent(object):
                     chunks = get_top_n_chunks(query, entity_type=key) # agora passamos a key pq se não dava o erro que faltava key dentro do get_top_n_chunks
                     for doc in chunks:
                         rag_queries.append(doc.page_content)
-            for chunks in rag_queries:
-                print(chunks)
             entities: str = "\n\n".join(rag_queries)
+            print(entities)
 
             t2 = time.time()
             self.logger.info("Time to identify entities: {}".format(round(t2 - t1, 2)))

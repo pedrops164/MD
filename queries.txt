@@ -16,3 +16,14 @@ In the first day I want to visit beaches and touristic sites.
 In the second day I want to go to a zoo in the afternoon, and a casino in the evening.
 In the third day I want to spend my day in the hotel.
 Build me an itinerary.
+
+I want to do a 4 day trip starting in Viana de Castelo and finishing in Famalicão, Portugal.
+In the first day I want to go to a zoo, and then I want to spend the rest of the day in the hotel.
+In the second day I want to go to the beach, and at night I want to go to the casino.
+In the third day I want to do some activity and go to a garden.
+
+I want to do a 2 day trip from Aveiro to Bragança.
+I want to visit remote locations with mountain views.
+
+I want to do a 2 day trip from Aveiro to Bragança.
+I want to visit remote locations, gardens, and do some activities.
