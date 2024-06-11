@@ -1,3 +1,4 @@
+
 # Trabalho Prático da UC de Mineração de Dados 
 
 ## Sumário do Trabalho
@@ -5,11 +6,17 @@ Este trabalho baseia-se num LLM que serve como guia turístico para várias loca
 
 ## Elementos do Grupo
 
-- **Pedro Pereira Sousa PG54721**
-- **Mateus Medeiros Pereira PG54089**
-- **Nuno Miguel Leite da Costa PG54121**
-- **Elione Culeca Cossengue PG51634**
+- Pedro Pereira Sousa PG54721
+- Mateus Medeiros Pereira PG54089
+- Nuno Miguel Leite da Costa PG54121
+- Elione Culeca Cossengue PG51634
 
 ## Estrutura do Repositório
 
 O repositório está estruturado da seguinte forma:
+
+## Demonstração
+
+![Demonstração do Projeto](./demo_projeto_1.gif)
+
+
