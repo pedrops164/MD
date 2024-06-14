@@ -1,8 +1,4 @@
-I want to do a 5 day roadtrip from Cape Town to Pretoria in South Africa.
-I want to visit remote locations with mountain views
-
-I want to walk from Cape Town to Pretoria in South Africa.
-I want to visit remote locations with mountain views
+# Example Queries
 
 I want to do a 5 day roadtrip from Braga to Algarve in Portugal.
 I want to visit remote locations with beaches

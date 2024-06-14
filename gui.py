@@ -62,8 +62,8 @@ class TravelGuideApp(tk.Tk):
         self.chat_text.tag_configure("agent_message", font=("Helvetica", 10), foreground="green")
 
     def log_to_file(self, query, trip_suggestion, list_of_places, validation_result, msg_num):
-        os.makedirs("output", exist_ok=True)
-        with open("output/debug.txt", "a", encoding="utf-8") as file:
+        os.makedirs("logs", exist_ok=True)
+        with open("logs/debug.txt", "a", encoding="utf-8") as file:
             file.write(f"\n\n\n--------------------------------------------------\nMessage: #{msg_num}\n")
             file.write(f"--------------------------------------------------\nUser Query: {query}\n")
             file.write(f"--------------------------------------------------\nTrip Suggestion: {trip_suggestion}\n")

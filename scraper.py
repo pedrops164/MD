@@ -50,35 +50,21 @@ def extract_blocks_by_font_size(column_coords):
     pdf_document.close()
     return blocks
 
-# def get_all_text():
-#     pdf_document = fitz.open(pdf_path)
-#     all_text = ""
-#     # first we append the left columns
-#     for page in pdf_document:
-#         # Extract text from the left column
-#         all_text += page.get_text("text", clip=left_column_coords)
-# 
-#     # then we append the right columns
-#     for page in pdf_document:
-#         # Extract text from the right column
-#         all_text += page.get_text("text", clip=right_column_coords)
-#     pdf_document.close()
-#     return all_text
-
-# gets blocks on the left side of the pdf
-blocks_left = extract_blocks_by_font_size(left_column_coords)
-# gets blocks on the right side of the pdf
-blocks_right = extract_blocks_by_font_size(right_column_coords)
-# concatenates all the blocks
-blocks = blocks_left + blocks_right
-
-text_splitter = CharacterTextSplitter(
-    separator="\n\n",
-    chunk_size=10,
-    chunk_overlap=0,
-    length_function=len,
-    is_separator_regex=False,
-)
-
-documents = text_splitter.create_documents(texts = blocks)
-add_chunks_to_db(documents, entity_type=entity_type)
+if __name__ == "__main__":
+    # gets blocks on the left side of the pdf
+    blocks_left = extract_blocks_by_font_size(left_column_coords)
+    # gets blocks on the right side of the pdf
+    blocks_right = extract_blocks_by_font_size(right_column_coords)
+    # concatenates all the blocks
+    blocks = blocks_left + blocks_right
+    
+    text_splitter = CharacterTextSplitter(
+        separator="\n\n",
+        chunk_size=10,
+        chunk_overlap=0,
+        length_function=len,
+        is_separator_regex=False,
+    )
+    
+    documents = text_splitter.create_documents(texts = blocks)
+    add_chunks_to_db(documents, entity_type=entity_type)

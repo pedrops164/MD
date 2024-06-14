@@ -4,7 +4,6 @@ from langchain_openai import OpenAIEmbeddings
 
 
 # ----------------------------------------------------------- 
-# odeio isto
 # esta cena é necessária para a get_vector_db!
 
 import os
