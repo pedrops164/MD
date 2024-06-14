@@ -82,9 +82,9 @@ The project's effectiveness was evaluated by comparing the performance of the LL
 │   ├── thematicparks.pdf
 │   └── zoos.pdf
 ├── presentations
-│   ├── .env
 │   ├── apresentacao_1.pptx
 │   └── apresentacao_2.pdf
+├── .env
 ├── .gitignore
 ├── agent.py
 ├── artigofinal_grupo2.pdf
