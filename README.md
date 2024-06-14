@@ -8,9 +8,9 @@ This project leverages a Large Language Model (LLM) to create a comprehensive to
 
 The project aims to enhance the quality of tourist information available for Northern Portugal by integrating an LLM refined with data from public sources. The main goal is to create a tourist guide that provides precise and user-tailored information about various locations in the region.
 
-## Architecture
+## Features
 
-The architecture of the application involves:
+Some of the features of the application include:
 - Data extraction and processing from public sources.
 - Integration of an LLM (GPT-3.5) through the OpenAI API.
 - Utilization of RAG for enhanced data retrieval.
