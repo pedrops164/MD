@@ -83,16 +83,18 @@ The project's effectiveness was evaluated by comparing the performance of the LL
 │   └── zoos.pdf
 ├── presentations
 │   ├── .env
-│   ├── .gitignore
-│   ├── agent.py
-│   ├── artigofinal_grupo2.pdf
-│   ├── gui.py
-│   ├── main.py
-│   ├── queries.txt
-│   ├── README.md
-│   ├── requirements.txt
-│   ├── scraper.py
-│   └── templates.py
+│   ├── apresentacao_1.pptx
+│   └── apresentacao_2.pdf
+├── .gitignore
+├── agent.py
+├── artigofinal_grupo2.pdf
+├── gui.py
+├── main.py
+├── queries.txt
+├── README.md
+├── requirements.txt
+├── scraper.py
+└── templates.py
 ```
 
 ## Installation
