@@ -87,7 +87,7 @@ The project's effectiveness was evaluated by comparing the performance of the LL
 ├── .env
 ├── .gitignore
 ├── agent.py
-├── artigofinal_grupo2.pdf
+├── report_MD.pdf
 ├── gui.py
 ├── main.py
 ├── queries.txt
