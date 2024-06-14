@@ -17,6 +17,6 @@ O repositório está estruturado da seguinte forma:
 
 ## Demonstração
 
-![Demonstração do Projeto](./demo_projeto_1.gif)
+![Demonstração do Projeto](./images/demo_projeto_1.gif)
 
 
